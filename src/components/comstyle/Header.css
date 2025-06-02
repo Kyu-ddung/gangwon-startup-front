@@ -1,0 +1,33 @@
+.header_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 10vh;
+    align-items: center;
+}
+
+.header_name {
+    width: 10%;
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+
+.menu_list li {
+    width: 250px;
+}
+
+.log {
+    margin-right: 5%;
+}
