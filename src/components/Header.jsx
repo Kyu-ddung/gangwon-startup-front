@@ -10,7 +10,7 @@ const header = () => {
             <ul className='menu_list'>
               <li>지역별 창업 아이템</li>
               <li>창업 지원 정책</li>
-              <li>게시판</li>
+              <Link to="/board"><li>창업 아이템</li></Link>
               <li>창업사례</li>
               
             </ul>

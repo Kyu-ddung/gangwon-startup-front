@@ -1,0 +1,73 @@
+.board_name {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.board_menu {
+    margin-top: 3%;
+}
+.city_option {
+    margin-left: 5%;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.write_btn {
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: white;
+    float: right;
+    margin-right: 5%;
+    width: 100px;
+    height: 30px;
+}
+
+.write_btn:hover, .city_option:hover {
+    cursor: pointer;
+}
+
+.board_containor {
+    margin-top: 3%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.board_card {
+    margin: 3% 0;
+    padding: 3%;
+    border: 1px solid black;
+    width: 48%; 
+    border-radius: 8px;
+    height: 300px;
+    box-sizing: border-box; 
+}
+
+.card_name {
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.card_sub {
+    color: gray;
+}
+
+.comment {
+    margin-top: 25%;
+}
+
+.comment span {
+    float: right;
+}

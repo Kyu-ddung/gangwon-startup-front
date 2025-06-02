@@ -29,7 +29,7 @@ const Register = () => {
                 <input type='password' placeholder='비밀번호를 다시 입력하세요'/>
                 </div>
                 <input type='checkbox'/>이용약관 및 개인정보 처리방침에 동의합니다<p/>
-                <input type='checkbox'/>마케팅 정보 수신에 동의합니다.
+                <input type='checkbox'/>마케팅 정보 수신에 동의합니다. (선택) <p/>
                 <button type='submit' className='register_btn'>회원가입</button>
             </form>
         </div>

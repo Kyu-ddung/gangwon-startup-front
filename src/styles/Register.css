@@ -99,3 +99,8 @@
     text-align: center;
     font-weight: 700;
 }
+
+.register_btn:hover {
+    cursor: pointer;
+    border: 2px solid #764ba2;
+}
