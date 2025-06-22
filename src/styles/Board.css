@@ -1,73 +1,161 @@
-.board_name {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    margin-top: 3%;
-    font-size: 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-}
-.board_menu {
-    margin-top: 3%;
-}
-.city_option {
-    margin-left: 5%;
-    width: 100px;
-    text-align: center;
-    height: 30px;
-    border: 1px solid gray;
-    border-radius: 8px;
-}
-.write_btn {
-    border-radius: 5px;
-    border: 1px solid gray;
-    background: white;
-    float: right;
-    margin-right: 5%;
-    width: 100px;
-    height: 30px;
+.board_page {
+  font-family: 'Pretendard', sans-serif;
+  background-color: #111827;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  color: #f3f4f6;
 }
 
-.write_btn:hover, .city_option:hover {
-    cursor: pointer;
+.board_name {
+  margin-top: 3%;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.board_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  margin-top: 2rem;
+}
+
+.board_city_option {
+  width: 160px;
+  height: 48px;
+  border: 2px solid #f87171;
+  border-radius: 8px;
+  padding: 10px 36px 10px 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border 0.3s ease;
+  background-color: #1f2937;
+  color: #fca5a5;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.board_city_option:hover,
+.board_city_option:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3);
+  cursor: pointer;
+}
+
+.write_btn {
+  border-radius: 8px;
+  background: linear-gradient(to right, #ef4444, #b91c1c);
+  color: white;
+  border: none;
+  width: 100px;
+  height: 48px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.write_btn:hover {
+  background: #dc2626;
 }
 
 .board_containor {
-    margin-top: 3%;
-    padding: 5%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 3% 5%;
+  margin-top: 2rem;
 }
 
 .board_card {
-    margin: 3% 0;
-    padding: 3%;
-    border: 1px solid black;
-    width: 48%; 
-    border-radius: 8px;
-    height: 300px;
-    box-sizing: border-box; 
+  background: #1f1f1f;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.08);
+  border: 1px solid #7f1d1d;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  gap: 10px;
 }
 
-.card_name {
-    font-size: 30px;
-    margin-bottom: 5%;
+.board_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.2);
 }
 
-.card_sub {
-    color: gray;
+.card_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
 }
 
-.comment {
-    margin-top: 25%;
+.region_tag,
+.category_tag {
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: #fca5a5;
+  color: #7f1d1d;
+  font-weight: 600;
 }
 
-.comment span {
-    float: right;
+.card_title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f87171;
+  margin: 0;
+}
+
+.card_desc {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  margin: 0.5rem 0 0.75rem;
+  line-height: 1.4;
+}
+
+.card_meta {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+
+.card_meta span {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  line-height: 1.4;
+}
+
+.card_meta span::before {
+  font-size: 1rem;
+  display: inline-block;
+  width: 1.5rem;
+  text-align: left;
+}
+
+.card_footer {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-align: right;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.no_result {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+  padding: 2rem 0;
 }

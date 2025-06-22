@@ -1,0 +1,76 @@
+.footer {
+  background: black;
+  color: white;
+  padding: 3rem 1.5rem 2rem;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-logo h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: whitesmoke;
+}
+
+.footer-logo p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+.footer-links li {
+  margin: 0.4rem 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  margin: 0.4rem 0;
+}
+
+.footer-socials a {
+  margin-right: 10px;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}

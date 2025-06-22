@@ -1,0 +1,193 @@
+/* 폼 전체 배경 */
+.form-wrapper {
+  background: linear-gradient(to bottom right, #111827, #1f2937); /* 다크 그라데이션 */
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  color: #f3f4f6;
+}
+
+/* 폼 카드 */
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #1f1f1f;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* 🔴 빨강 헤더 */
+.form-header {
+  background: linear-gradient(to right, #ef4444, #b91c1c);
+  color: white;
+  padding: 1.5rem 2rem;
+}
+
+.form-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* 본문 */
+.form-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* 인풋 공통 */
+label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+input, select, textarea {
+  padding: 0.75rem;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+/* 포커스 시 빨간색 테두리 */
+input:focus, select:focus, textarea:focus {
+  border-color: #ef4444;
+  outline: none;
+}
+
+/* 드롭존 */
+.dropzone {
+  border: 2px dashed #4b5563;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+  background-color: #1f2937;
+}
+
+.dropzone.active {
+  border-color: #ef4444;
+  background-color: #1f1f1f;
+}
+
+.dropzone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* 이미지 미리보기 */
+.image-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.preview-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.preview-wrapper img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+}
+
+.preview-wrapper button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+/* 🔴 빨강 CTA 버튼 */
+.submit-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #dc2626;
+}
+
+.submit-button.disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+}
+
+/* 제출 완료 화면 */
+.submit-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1f2937;
+  padding: 2rem;
+}
+
+.submit-card {
+  background: #1f1f1f;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  color: #f3f4f6;
+}
+
+.submit-card h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form_city_option {
+  padding: 0.75rem;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #111827;
+  color: #f3f4f6;
+}

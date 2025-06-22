@@ -1,36 +1,40 @@
 .Login_body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
+/* 제목 */
 .login_head {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 35px;
-    font-weight: 700;
-    text-align: center;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
 }
 
 .head_sub {
-    color: gray;
-    text-align: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
+/* 떠다니는 배경 애니메이션 */
 .background-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .shape1 { top: 20%; left: 10%; animation-delay: 0s; }
@@ -38,108 +42,138 @@
 .shape3 { top: 80%; left: 20%; animation-delay: 4s; }
 
 .floating-shapes {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    animation: float 6s ease-in-out infinite;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(180deg); }
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
 }
 
+/* 로그인 카드 */
 .login_containor {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 35%;
-    border-radius: 5%;
-    height: 80vh;
-    padding: 3%;
-    z-index: 1;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  width: 35%;
+  border-radius: 20px;
+  height: 80vh;
+  padding: 3%;
+  z-index: 1;
+  justify-content: space-around;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  color: #f3f4f6;
 }
 
 .form_group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form_name {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #f87171;
 }
 
 .form_group input {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #e1e5e9;
-    height: 45px;
-    border-radius: 8px;
-    font-size: 15px;
-    transition: all 0.2s ease-in-out;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #374151;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #111827;
+  color: #f3f4f6;
+  transition: all 0.2s ease-in-out;
 }
 
+/* 마우스를 올렸을 때 */
 .form_group input:hover {
-    cursor: pointer;
-    border: 2px solid #667eea;
-}
-.log_btn {
-    margin-top: 5%;
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 700;
+  border: 2px solid #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+  cursor: pointer;
 }
 
-.log_btn:hover,
-.log_menu button:hover {
-    cursor: pointer;
+/* 포커스 되었을 때 */
+.form_group input:focus {
+  outline: none;
+  border: 2px solid #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.3);
+}
+
+/* 로그인 버튼 */
+.log_btn {
+  margin-top: 5%;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.log_btn:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  cursor: pointer;
 }
 
 .pwlost {
-    float: right;
-    margin-bottom: 20px;
-    color: gray;
+  float: right;
+  margin-bottom: 20px;
+  color: #9ca3af;
+  font-size: 0.9rem;
 }
+
 .other {
-    text-align: center;
-    border-top: 1px solid #ccc;
-    line-height: 0.1em;
-    margin: 20px 0 20px;
-    color: #888;
+  text-align: center;
+  border-top: 1px solid #374151;
+  line-height: 0.1em;
+  margin: 20px 0 20px;
+  color: #6b7280;
 }
 
 .other span {
-  background: white;
+  background: #1f1f1f;
   padding: 0 10px;
 }
 
+/* 회원가입/다른 옵션 버튼 */
 .log_menu {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .log_menu button {
-    width: 100px;
-    height: 45px;
-    border-radius: 8px;
-    border: 2px solid #e1e5e9;
-    background: white;
-    font-weight: 800;
+  width: 100px;
+  height: 45px;
+  border-radius: 8px;
+  border: 2px solid #374151;
+  background: #1f2937;
+  color: #f3f4f6;
+  font-weight: 800;
+  transition: all 0.2s ease;
 }
 
-img {
-    width: 10px;
-    height: 10px;
-    margin-right: 5%;
+.log_menu button:hover {
+  border-color: #ef4444;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.login_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
 }

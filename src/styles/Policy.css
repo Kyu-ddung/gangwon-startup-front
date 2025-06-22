@@ -1,0 +1,212 @@
+.policy_page {
+  font-family: 'Pretendard', sans-serif;
+  background-color: #111827;
+  padding-bottom: 80px;
+  min-height: 100vh;
+  color: #f3f4f6;
+}
+
+/* 헤더 */
+.policy_header {
+  background-color: #111827;
+  color: #f87171;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.policy_header h1 {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.policy_header p {
+  font-size: 18px;
+  color: #fca5a5;
+}
+
+/* 필터 */
+.policy_filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 30px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.policy_search,
+.policy_filters select {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #1f2937;
+  color: #f87171;
+}
+
+/* 카테고리 버튼 */
+.policy_category_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.policy_chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background-color: #1f1f1f;
+  border: 1px solid #ef4444;
+  border-radius: 9999px;
+  font-size: 14px;
+  color: #fca5a5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.policy_chip:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+.policy_chip.active {
+  background-color: #ef4444;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.2);
+}
+
+.chip_icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* 결과 수 */
+.policy_results {
+  text-align: center;
+  font-size: 16px;
+  color: #f87171;
+  margin-bottom: 20px;
+}
+
+/* 카드 리스트 */
+.policy_cards {
+  display: grid;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.policy_card {
+  background-color: #1f1f1f;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.policy_card:hover {
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.15);
+}
+
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card_tag {
+  background-color: #f87171;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card_status {
+  background-color: #fecaca;
+  color: #7f1d1d;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.policy_card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fca5a5;
+}
+
+.policy_card p {
+  color: #d1d5db;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card_features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.feature {
+  background-color: #1f2937;
+  color: #f87171;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 9999px;
+}
+
+.card_details p {
+  font-size: 14px;
+  color: #d1d5db;
+  margin-bottom: 6px;
+}
+
+.visit_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #ef4444;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.visit_btn:hover {
+  text-decoration: underline;
+}
+
+.icon_inline {
+  width: 16px;
+  height: 16px;
+}
+
+/* 빈 결과 */
+.policy_empty {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 18px;
+  color: #9ca3af;
+}
